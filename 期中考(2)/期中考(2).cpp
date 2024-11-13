@@ -10,7 +10,7 @@ int main()
     cout << "請輸入一個正整數n: ";
     cin >> n;
     for (int i = 1; i <= n; i++) {
-        if (i % 2 == 0)sum += i;
+       if (i % 2 == 0)sum += i;
     }
     cout << "For loop: 1~" << n << "之間所有偶數的和為: " << sum << endl;
 
