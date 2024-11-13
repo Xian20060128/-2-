@@ -12,7 +12,25 @@ int main()
     for (int i = 1; i <= n; i++) {
         if (i % 2 == 0)sum += i;
     }
-    cout << "1~" << n << "之間所有偶數的和為: " << sum << endl;
+    cout << "For loop: 1~" << n << "之間所有偶數的和為: " << sum << endl;
+
+    // while loop
+    int i = 1;
+    sum = 0;
+    while (i <= n) {
+        if (i % 2 == 0) sum += i; i++;
+    }
+        cout << "While loop: 1~" << n << "之間所有偶數的和為: " << sum << endl;
+
+    // do-while loop
+        i = 2;
+        sum = 0;
+        do {
+            
+                sum += i; i += 2;
+        } while (i <= n);
+        cout << "Do-While 1oop: 1~" << n << "之間所有偶數的和為: " << sum << endl;
+
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
